@@ -9,7 +9,7 @@ Este proyecto es una aplicación web interactiva diseñada para auditar y evalua
 
 - **Espectro Dinámico Aleatorio:** Cada vez que se inicia una prueba, el sistema genera un arco cromático único y aleatorio de 22 fichas (2 anclas fijas en los extremos y 20 fichas móviles desordenadas). Esto evita que los evaluados memoricen las posiciones.
 - **Cómputo Automatizado de Error (TES):** Calcula en tiempo real el Puntaje de Error Total (Total Error Score) basándose en la diferencia absoluta de la posición de los IDs adyacentes.
-- **Sincronización Bifásica de Datos:** 1. **Local:** Almacenamiento local asíncrono para auditorías rápidas en el dispositivo mediante panel administrador protegido (`adminADC`).
+- **Sincronización Bifásica de Datos:** 1. **Local:** Almacenamiento local asíncrono para auditorías rápidas en el dispositivo mediante panel administrador protegido.
   2. **Nube (Cloud):** Inyección automatizada mediante API (Google Apps Script) hacia una base de datos centralizada en **Google Sheets** sin intermediarios.
 - **Interfaz Responsiva Panorámica:** Diseñado para ejecutarse en dispositivos móviles en orientación horizontal para simular las líneas de examen físicas.
 

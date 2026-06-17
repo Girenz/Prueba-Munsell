@@ -420,6 +420,11 @@
         }
 
         function startTest() {
+            if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+    } else if (document.documentElement.webkitRequestFullscreen) { /* Safari/iOS */
+        document.documentElement.webkitRequestFullscreen();
+            }
             const nameInput = document.getElementById('auxiliarName').value.trim();
             if (!nameInput) {
                 alert("Error: El nombre del auxiliar de ADC es obligatorio para iniciar.");
